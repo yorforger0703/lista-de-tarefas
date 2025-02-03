@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #771515, #000000);
+    padding: 0.625rem;
+}
+
+.lista-app {
+    width: 100%;
+    max-width: 33.75rem;
+    background: #fff;
+    margin: 6.25rem auto 1.25rem;
+    padding: 2.5rem 1.875rem 4.375rem;
+    border-radius: 0.625rem;
+}
+
+.lista-app h2 {
+    color: #771515;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.lista-app h2 img {
+    width: 1.875rem;
+    margin-left: 0.625rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 1.875rem;
+    padding-left: 1.25rem;
+    margin-bottom: 1.5625rem;
+}
+
+input {
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0.625rem;
+    font-weight: 0.875rem;
+    width: 100%;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 1rem 3.125rem;
+    background: #ff5945;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2.5rem;
+    margin-left: 1rem;
+    width: auto;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.0625rem;
+    padding: 0.75rem 0.5rem 0.75rem 3.125rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-image: url('images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 0.75rem;
+    left: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url('images/checked.png');
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 0.3125rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.375rem;
+    color: #555;
+    line-height: 2.5rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #360404, #bd1414);
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+}
+
+footer .social a {
+    font-size: 25px;
+    color: black;
+    border: 2px solid black;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    transform: scale(1.2)translateY(-5px);
+    background: black;
+    color: #771515;
+}
+
+footer p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+@media (max-width:991px) {
+    .footer {
+        padding: 2rem 3%;
+    }
+}
