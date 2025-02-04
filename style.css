@@ -9,6 +9,18 @@ html {
     font-size: 16px;
 }
 
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #000000f3;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #771515;
+}
+
 .container {
     width: 100%;
     min-height: 100vh;
@@ -165,6 +177,8 @@ footer p {
     font-size: 16px;
     color: black;
 }
+
+
 
 @media (max-width:991px) {
     .footer {
