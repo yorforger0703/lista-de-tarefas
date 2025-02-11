@@ -39,7 +39,7 @@ window.onload = showTask;
 
 function changePlaceholder() {
     if (window.innerWidth <= 768) {
-        inputBox.setAttribute("placeholder", "Seu Texto");
+        inputBox.setAttribute("placeholder", "Seu texto");
     } else {
         inputBox.setAttribute("placeholder", "Adicione seu texto");
     }
